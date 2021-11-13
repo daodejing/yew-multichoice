@@ -3,18 +3,6 @@
 version = 3
 
 [[package]]
-name = "actix-multichoice"
-version = "0.1.0"
-dependencies = [
- "log",
- "reqwasm",
- "serde",
- "wasm-bindgen-futures",
- "wasm-logger",
- "yew",
-]
-
-[[package]]
 name = "anyhow"
 version = "1.0.45"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -556,4 +544,16 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
+]
+
+[[package]]
+name = "yew-multichoice"
+version = "0.1.0"
+dependencies = [
+ "log",
+ "reqwasm",
+ "serde",
+ "wasm-bindgen-futures",
+ "wasm-logger",
+ "yew",
 ]
