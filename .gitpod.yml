@@ -3,7 +3,11 @@ image:
 
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: cargo install trunk wasm-bindgen-cli
+  - name: InstallDependencies
+    init: cargo install trunk wasm-bindgen-cli && rustup target add wasm32-unknown-unknown
+    command: cargo build
+
+  - name: Run
     command: trunk serve
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
