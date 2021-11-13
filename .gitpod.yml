@@ -3,9 +3,6 @@ image:
 
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - name: InstallWasm
-    init: rustup target add wasm32-unknown-unknown
-    
   - name: InstallDependencies
     init: cargo install trunk wasm-bindgen-cli
     command: cargo build
