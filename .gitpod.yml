@@ -4,6 +4,8 @@
 tasks:
   - name: Build
     init: cargo build
+  - name: Install trunk
+    init: cargo install trunk wasm-bindgen-cli
 
 github:
   prebuilds:
