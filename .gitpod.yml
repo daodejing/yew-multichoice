@@ -1,13 +1,12 @@
 # image:
 #   file: .gitpod.Dockerfile
 
-# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - name: wasm
-    init: cargo install trunk
-    command: echo wasm
+  - name: Build
+    init: cargo build
 
-# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
-ports:
-  - port: 8080
-    onOpen: open-preview
+github:
+  prebuilds:
+    branches: true
+    pullRequestsFromForks: true
+    addLabel: prebuilt-in-gitpod
