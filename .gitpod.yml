@@ -3,8 +3,7 @@ image:
 
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: trunk and wasm-bindgen-cli
-    command: cargo install trunk wasm-bindgen-cli
+  - init: cargo install trunk wasm-bindgen-cli
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
